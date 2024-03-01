@@ -1,7 +1,15 @@
-import "./App.css";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import UserList from "./UserList";
+import UserDetails from "./UserDetails";
 
-function App() {
-  return <div className="App"></div>;
-}
+const App = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<UserList />} />
+      <Route path="/user/:username" element={<UserDetails />} />
+    </Routes>
+  );
+};
 
 export default App;
