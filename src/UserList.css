@@ -1,0 +1,46 @@
+/* src/UserList.css */
+
+/* Style for the User List container */
+
+.user-list-container {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 5px;
+}
+
+/* Style for the User List heading */
+.user-list-heading {
+  font-size: 24px;
+  margin-bottom: 16px;
+  /* background-color: brown; */
+}
+
+/* Style for the User List */
+.user-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Style for each user item in the list */
+.user-item {
+  margin-bottom: 16px;
+}
+
+/* Style for the user avatar */
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+/* Style for the user login (username) */
+.user-login {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+.user-item.selected {
+  background-color: #6bcaf0;
+  cursor: pointer;
+}
