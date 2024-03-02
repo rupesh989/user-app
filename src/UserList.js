@@ -37,7 +37,7 @@ const UserList = () => {
                 src={user.avatar_url}
                 alt={user.login}
                 className="user-avatar"
-              />
+              />{" "}
               <span className="user-login">{user.login}</span>
             </Link>
           </li>
