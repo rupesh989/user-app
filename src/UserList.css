@@ -1,62 +1,111 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* UserList.css */
 
 .user-list-container {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
 }
+/* UserList.css */
 
-/* Style for the User List heading */
 .user-list-heading {
-  font-size: 34px;
-  margin-bottom: 16px;
-  background-color: #f0c14a;
-  border-radius: 0.5rem;
-  text-align: center; /* Center-align the heading */
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #3498db;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Style for the User List */
 .user-list {
   list-style: none;
   padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
-/* Style for each user item in the list */
 .user-item {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 16px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Style for the user avatar */
-.user-avatar {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-right: 12px;
+.user-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Style for the user login (username) */
-.user-login {
-  font-size: 24px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-}
-.user-item.selected {
-  background-color: #6bcaf0;
-  cursor: pointer;
-  border-radius: 0.5rem;
+.selected {
+  background-color: #3498db;
+  color: #fff;
 }
 
 .user-link {
   text-decoration: none;
-  color: inherit;
+  display: flex;
+  align-items: center;
+  color: #333;
 }
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.user-login {
+  font-weight: bold;
+  flex-grow: 1;
+  color: #333;
+}
+/* UserList.css */
+
+.user-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f4f4f4; /* Default background color for light theme */
+  transition: background-color 0.3s ease; /* Add transition effect for smooth theme switch */
+}
+
+.dark .user-list-container {
+  background-color: #2c3e50; /* Dark background color for the dark theme */
+}
+
+.user-list-heading {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #3498db; /* Default color for light theme */
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dark .user-list-heading {
+  color: #fff; /* Color for the dark theme */
+}
+
+/* Rest of your styles... */
