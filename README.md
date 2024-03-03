@@ -1,4 +1,7 @@
-# The objective is to create a two pages the requirements of each are listed below:
+# The objective
+
+To create a two pages the requirements of each are listed below:
+
 
 # User List page -
 
