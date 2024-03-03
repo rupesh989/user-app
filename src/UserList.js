@@ -8,7 +8,6 @@ const UserList = () => {
   const [selectedUser, setSelectedUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  // const [isDarkTheme, setIsDarkTheme] = useState(false); // Add the state variable
 
   useEffect(() => {
     const fetchData = async () => {

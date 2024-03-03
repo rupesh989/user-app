@@ -15,7 +15,6 @@ const Root = () => {
     <React.StrictMode>
       <Router>
         <div className={`app-container ${theme}`}>
-          {/* Add a styled button to toggle the theme */}
           <button className="theme-toggle-btn" onClick={toggleTheme}>
             Theme: {theme.charAt(0).toUpperCase() + theme.slice(1)}
           </button>

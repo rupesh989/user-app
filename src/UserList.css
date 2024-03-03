@@ -1,6 +1,7 @@
 /* UserList.css */
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 .user-list-container {
   max-width: 800px;
   margin: 0 auto;
@@ -13,7 +14,6 @@
   min-height: 100vh;
   background-color: #343a40;
 }
-/* UserList.css */
 
 .user-list-heading {
   font-size: 36px;
@@ -52,7 +52,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .user-item:hover {
-  background-color: #f0f0f0; /* Change this to your desired highlight color */
+  background-color: #f0f0f0;
   cursor: pointer;
 }
 .selected {
@@ -79,26 +79,19 @@
   flex-grow: 1;
   color: #333;
 }
-/* UserList.css */
-
-/* ... your existing styles ... */
 
 .user-item {
-  /* Your regular styles for user items */
-  transition: background-color 0.3s; /* Add a smooth transition effect */
+  transition: background-color 0.3s;
 }
 
 .user-item.selected {
   border: none;
-  /*background-color: #28a745;  Change this to your desired color for selected items */
 }
 
 .user-item:hover {
-  background-color: #a2d6f8; /* Change this to your desired highlight color */
+  background-color: #a2d6f8;
   cursor: pointer;
 }
-
-/* ... other styles ... */
 
 .light {
   background-color: var(--background-light);

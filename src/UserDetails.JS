@@ -61,7 +61,6 @@ const UserDetails = () => {
                 {user.html_url}
               </a>
             </li>
-            {/* Add more details as needed */}
           </ul>
         </React.Fragment>
       )}
