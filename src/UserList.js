@@ -8,7 +8,7 @@ const UserList = () => {
   const [selectedUser, setSelectedUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [isDarkTheme, setIsDarkTheme] = useState(false); // Add the state variable
+  // const [isDarkTheme, setIsDarkTheme] = useState(false); // Add the state variable
 
   useEffect(() => {
     const fetchData = async () => {
@@ -31,7 +31,7 @@ const UserList = () => {
   };
 
   return (
-    <div className={`user-list-container ${isDarkTheme ? "dark" : "light"}`}>
+    <div className="user-list-container">
       <h2 className="user-list-heading">User List</h2>
 
       {loading ? (
