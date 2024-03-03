@@ -34,7 +34,7 @@ const UserDetails = () => {
       ) : (
         <React.Fragment>
           {error && <p className="error-message">{error}</p>}
-          <h2 className="user-details-heading">User Details</h2>
+          <h2 className="user-details-heading">User Detail</h2>
           <img
             src={user.avatar_url}
             alt={user.login}
